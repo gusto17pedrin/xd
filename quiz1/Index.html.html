@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Personalizado</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://i.ibb.co/bXcCxGv/Whats-App-Image-2024-08-01-at-18-58-32.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 90%;
+            width: 600px;
+            box-sizing: border-box;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: #F70000;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .model-image {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+        .question {
+            font-family: 'Open Sans', sans-serif;
+            text-align: center;
+            margin: 15px 0;
+        }
+        .question p {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .whatsapp-highlight {
+            color: #28a745; /* Verde para o texto "COMPRAR" */
+        }
+        .name-highlight {
+            color: #6f42c1; /* Roxo para o texto "Ketleyn Amorim" */
+        }
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 15px;
+            width: 100%;
+        }
+        button {
+            border: none;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .btn-yes {
+            background-color: #28a745; /* Verde */
+        }
+        .btn-yes:hover {
+            background-color: #1e7e34;
+        }
+        .btn-no {
+            background-color: #dc3545; /* Vermelho */
+        }
+        .btn-no:hover {
+            background-color: #c82333;
+        }
+        .footer {
+            background-color: transparent; /* Fundo transparente */
+            color: #ffffff; /* Cor do texto, pode ser alterada conforme necessário */
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+        @media (max-width: 600px) {
+            .header, .container {
+                padding: 10px;
+                margin-top: 10px;
+            }
+            h1 {
+                font-size: 18px;
+            }
+            .question p {
+                font-size: 14px;
+            }
+            .model-image {
+                max-width: 240px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>RESPONDA AS PERGUNTAS ABAIXO</h1>
+        </div>
+        <div class="question">
+            <p><span class="name-highlight">Ketleyn Amorim</span> sera a modelo que você vai conversar, Via <span class="whatsapp-highlight">WhatsApp</span> Você tem certeza que deseja <span class="whatsapp-highlight">Continuar?</span></p>
+        </div>
+        <img src="https://i.ibb.co/bXcCxGv/Whats-App-Image-2024-08-01-at-18-58-32.jpg" alt="Imagem de Ketleyn Amorim" class="model-image">
+        <div class="btn-container">
+            <button class="btn-yes" onclick="handleResponse('yes')">Sim</button>
+            <button class="btn-no" onclick="handleResponse('no')">Não</button>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- Rodapé agora sem fundo preto -->
+    </div>
+
+    <script>
+        function handleResponse(response) {
+            if (response === 'yes') {
+                window.location.href = 'thankyou.html'; // Página de agradecimento ou próximo passo
+            } else if (response === 'no') {
+                alert('Entendemos sua decisão. Se mudar de ideia, estarei aqui!');
+            }
+        }
+    </script>
+</body>
+</html>
