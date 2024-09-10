@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta content="Ganhe dinheiro com sua fazenda virtual!" name="description">
+      <meta property="og:image" content="images/logo.png">
+      <meta property="og:url" content="/">
+      <meta content="ColheitaCash" property="og:title">
+      <meta content="Ganhe dinheiro com sua fazenda virtual!" property="og:description">
+      <meta name="twitter:site" content="@SeedsMoney">
+      <meta name="twitter:image" content="/static/logos/logo.png?v=1721662647">
+      <meta content="ColheitaCash" property="twitter:title">
+      <meta content="Ganhe dinheiro com sua fazenda virtual!" property="twitter:description">
+      <meta property="og:type" content="website">
+      <meta content="summary_large_image" name="twitter:card">
+      <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+      <link rel="manifest" href="/static/site.webmanifest?v=1721662647">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+      <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Oswald:wght@300;400;700&amp;family=Roboto+Condensed:wght@400;600;700;800&amp;family=Titan+One&amp;display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link href="css/app.css" rel="stylesheet" type="text/css">
+      <title>ColheitaCash | Ganhe dinheiro com sua fazenda virtual!</title>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/qrcode.min.js"></script>
+         </head>
+   <body>
+            <link href="css/animations.css" rel="stylesheet" type="text/css">
+<div class="alert-gain">
+    <div class="alert-gain-container">
+        <div class="alertfy-gain">
+            <div class="alertfy-message">
+                <div class="alertify-container-svg">
+                    <svg viewBox="0 0 24 24" width="100%" height="100%" fill="var(--toastify-icon-color-success)">
+                        <path d="M12 0a12 12 0 1012 12A12.014 12.014 0 0012 0zm6.927 8.2l-6.845 9.289a1.011 1.011 0 01-1.43.188l-4.888-3.908a1 1 0 111.25-1.562l4.076 3.261 6.227-8.451a1 1 0 111.61 1.183z"></path>
+                    </svg>
+                </div>
+                <span>
+                    <span class="bolded">Vitor Oliveira</span> realizou um saque de <span class="bolded">R$71,00<span></span></span>
+                </span>
+            </div>
+            <div class="alert-fill-container">
+                <div class="alert-fill"></div>
+            </div> 
+        </div>
+    </div>
+</div>
+<style>
+    body{
+        --letter-color-primary: #fff;
+        --letter-color-secondary: #000;
+        --letter-color-tertiary: #333;
+        --alert-success: #07bc0c;
+        --alert-error: #e74c3c;
+        --alert-warning: #f1c40f;
+        --alert-info: #3498db;
+    }
+    .alert-gain{
+        position: fixed;
+        right: 0;
+        top: 12%;
+        transform: translateY(12%);
+        z-index: 99999;
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        transition: 1s;
+        margin-right: -24rem;
+
+    }
+    .alertfy-gain{
+        width: 18rem;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #fff;
+        user-select: none;
+        background-color: var(--letter-color-primary);
+        color: var(--letter-color-tertiary);
+        margin: .5rem;
+        padding: .5rem .75rem;
+        box-shadow: 0 0 8px rgba(0,0,0,.8);
+        border-radius: .3rem;
+    }
+    .bolded{
+        font-weight: bold;
+    }
+
+    .alertfy-message{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .alertfy-message svg{
+        width: 1.95rem;
+        height: 1.95rem;
+        margin-right: .5rem;
+    }
+
+    .alert-fill-container{
+        width: 100%;
+        height: .45rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: .5rem;
+    }
+
+    .alert-fill{
+        height: 100%; 
+    }
+</style>
+<script src="js/alerts.js"></script>      <div id="copiacola2" style="display:none"></div>
+      <!--<video autoplay muted loop id="myVideo">
+         <source src="/static/video/background-motion.mp4" type="video/mp4">
+         Your browser does not support HTML5 video.
+      </video>-->
+      <div class="toast animate__animated animate__bounceInRight" id="toast">
+         <div class="toast-body" id="toast-body"></div>
+      </div>
+      <main class="wrapper container-fluid">
+         <header class="header container-fluid" id="header">
+            <style>
+.navbar-brand-logo img{
+   width: 7rem;
+   height: auto;
+}
+</style>
+
+   <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+         <a class="navbar-brand navbar-brand-logo" href="#"><img src="images/logo-navbar.png" loading="eager" fetchpriority="auto" style="widh: 5rem; height: auto;"></a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar--ul">
+                  <li class="navbar--ul_li"><a class="navbar--ul_a" href="/">Página Inicial</a></li>
+                  <li class="navbar--ul_li"><a class="navbar--ul_a" href="/signup">Registro</a></li>
+                  <li class="navbar--ul_li"><a class="navbar--ul_a" href="/signin">Login</a></li>
+                  <li class="navbar--ul_li"><a class="navbar--ul_a" href="/support">Suporte</a></li>
+                  <li class="navbar--ul_li"><a class="navbar--ul_a" href="/terms">Termos de Uso</a></li>
+               </ul>
+         </div>
+      </div>
+   </nav>
+         </header>
+
+         <section class="painel">
+            <div class="painel--content">
+                <div class="painel--info">
+                  <h2>Suporte</h2>
+                </div>
+               <div class="content__deposit">
+               <div class="buttonDeposit">
+        <div class="button-pushable" style="user-select:none" data-wallet="" data-min="">
+        <span class="button-shadow"></span>
+        <span class="button-edge"></span>
+        <span class="button-front text" style="cursor:pointer;" onclick="window.location='mailto:igamessolutions@gmail.com'">Suporte Email</span>
+    </div>
+         
+        <div class="button-pushable" style="user-select:none">
+        <span class="button-shadow"></span>
+        <span class="button-edge"></span>
+        <span class="button-front text" style="background: #f00 !important; cursor:pointer;" onclick="window.location='https://w.app/21rOsS'">Suporte WhatsApp/Telegram</span>
+    </div>
+    </div>
+
+            </div>
+         </div></section>
+      </main>
+      <div style="display:none;position: absolute; top:0; left:0; width: 100vw; height: 100vh; background: #000000cc; z-index: 10000;" id="container-video-intro">
+         <div style=" position: fixed; top: 10px; right: 10px; color: #fff; font-size: 30px; cursor:pointer;" id="close-video">X</div>
+      </div>
+      <footer id="footer" class="footer">
+         © Copyright ColheitaCash      </footer>
+      <script src="js/rocket.js" data-cf-settings="5e241da4ef972625b8cd8bb9-|49" defer=""></script>
+   <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{" rayid":"8c0b2f828e3d6639","version":"2024.8.0","r":1,"token":"5602e81952ec4990a0f3bbc312b52e02","servertiming":{"name":{"cfextpri":true,"cfl4":true}}}"="" crossorigin="anonymous"></script>
+
+   <script src="js/structure.js"></script>
+  <script src="js/mask.js"></script>
+</body></html>
